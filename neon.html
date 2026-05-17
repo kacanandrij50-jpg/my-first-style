@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Неонова Магія</title>
+    <style>
+        /* Робимо повністю чорний фон, як у фільмі Матриця */
+        body {
+            background-color: #050505;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* Стиль для нашого крутого тексту */
+        .neon-text {
+            font-size: 60px;
+            font-weight: bold;
+            color: #111; /* Текст спочатку майже чорний і непомітний */
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            cursor: pointer;
+            transition: 0.2s; /* Швидкість реакції на мишку */
+        }
+
+        /* МАГІЯ: Що відбувається, коли ми наводимо мишку */
+        .neon-text:hover {
+            color: #fff; /* Текст спалахує білим */
+            /* Додаємо 4 шари різнокольорового неонового світіння (Тіні) */
+            text-shadow: 
+                0 0 10px #00ffcc,
+                0 0 20px #00ffcc,
+                0 0 40px #00ffcc,
+                0 0 80px #00ffcc;
+            transform: scale(1.1); /* Текст трохи збільшується */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Напишіть тут своє ім'я або будь-яке слово -->
+    <div class="neon-text">збираю на лікуваня єті в африці</div>
+
+</body>
+</html>
